@@ -8,6 +8,7 @@
 
 #import "BlogMasterViewController.h"
 #import "BlogDetailViewController.h"
+#import "BlogPost.h"
 
 @implementation BlogMasterViewController
 
@@ -22,7 +23,15 @@
     NSError *error;
     NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
     
-    self.blogPosts = [dataDictionary objectForKey:@"posts"];
+    self.blogPosts = [NSMutableArray array];
+    
+    NSArray *blogPostsArray = [dataDictionary objectForKey:@"posts"];
+    
+    for (NSDictionary *blogPostDictionary in blogPostsArray) {
+        BlogPost *blogPost = [BlogPost blogPostWithTitle:[blogPostDictionary objectForKey:@"title"]];
+        blogPost.author = [blogPostDictionary objectForKey:@"author"];
+        [self.blogPosts addObject:blogPost];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,7 +44,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showBlog"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSString *title = [self.blogPosts[indexPath.row] objectForKey:@"title"];
+        BlogPost *blogPost = [self.blogPosts objectAtIndex:indexPath.row];
+        NSString *title = blogPost.title;
         [[segue destinationViewController] setDetailItem:title];
     }
 }
@@ -52,9 +62,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    BlogPost *blogPost = [self.blogPosts objectAtIndex:indexPath.row];
 
-    cell.textLabel.text = [self.blogPosts[indexPath.row] objectForKey:@"title"];
-    cell.detailTextLabel.text = [self.blogPosts[indexPath.row] objectForKey:@"author"];
+    cell.textLabel.text = blogPost.title;
+    cell.detailTextLabel.text = blogPost.author;
     
     return cell;
 }

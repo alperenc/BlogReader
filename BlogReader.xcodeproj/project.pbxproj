@@ -15,6 +15,7 @@
 		C7FC166B1B382ABD00388C17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FC166A1B382ABD00388C17 /* Images.xcassets */; };
 		C7FC166E1B382ABD00388C17 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7FC166C1B382ABD00388C17 /* LaunchScreen.xib */; };
 		C7FC167A1B382ABD00388C17 /* BlogReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FC16791B382ABD00388C17 /* BlogReaderTests.m */; };
+		C7FC16851B3854CC00388C17 /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FC16841B3854CC00388C17 /* BlogPost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		C7FC16731B382ABD00388C17 /* BlogReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlogReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FC16781B382ABD00388C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7FC16791B382ABD00388C17 /* BlogReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlogReaderTests.m; sourceTree = "<group>"; };
+		C7FC16831B3854CC00388C17 /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
+		C7FC16841B3854CC00388C17 /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 		C7FC16591B382ABD00388C17 /* BlogReader */ = {
 			isa = PBXGroup;
 			children = (
+				C7FC16831B3854CC00388C17 /* BlogPost.h */,
+				C7FC16841B3854CC00388C17 /* BlogPost.m */,
 				C7FC165E1B382ABD00388C17 /* AppDelegate.h */,
 				C7FC165F1B382ABD00388C17 /* AppDelegate.m */,
 				C7FC16611B382ABD00388C17 /* BlogMasterViewController.h */,
@@ -226,6 +231,7 @@
 			files = (
 				C7FC16601B382ABD00388C17 /* AppDelegate.m in Sources */,
 				C7FC16631B382ABD00388C17 /* BlogMasterViewController.m in Sources */,
+				C7FC16851B3854CC00388C17 /* BlogPost.m in Sources */,
 				C7FC165D1B382ABD00388C17 /* main.m in Sources */,
 				C7FC16661B382ABD00388C17 /* BlogDetailViewController.m in Sources */,
 			);

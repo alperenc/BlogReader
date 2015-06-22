@@ -32,6 +32,7 @@
         blogPost.author = [blogPostDictionary objectForKey:@"author"];
         blogPost.thumbnail = [blogPostDictionary objectForKey:@"thumbnail"];
         blogPost.date = [blogPostDictionary objectForKey:@"date"];
+        blogPost.url = [NSURL URLWithString:[blogPostDictionary objectForKey:@"date"]];
         [self.blogPosts addObject:blogPost];
     }
 }
@@ -44,15 +45,15 @@
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"showBlog"]) {
+    if ([[segue identifier] isEqualToString:@"showBlogPost"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         BlogPost *blogPost = [self.blogPosts objectAtIndex:indexPath.row];
-        NSString *title = blogPost.title;
-        [[segue destinationViewController] setDetailItem:title];
+        
+        [segue.destinationViewController setBlogPostURL:blogPost.url];
     }
 }
 
-#pragma mark - Table View
+#pragma mark - Table View Data Source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;

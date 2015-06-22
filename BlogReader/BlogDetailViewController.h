@@ -1,5 +1,5 @@
 //
-//  DetailViewController.h
+//  BlogDetailViewController.h
 //  BlogReader
 //
 //  Created by Alp Eren Can on 22/06/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@interface BlogDetailViewController : UIViewController
 
 @property (strong, nonatomic) id detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;

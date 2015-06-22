@@ -1,18 +1,18 @@
 //
-//  DetailViewController.m
+//  BlogDetailViewController.m
 //  BlogReader
 //
 //  Created by Alp Eren Can on 22/06/15.
 //  Copyright (c) 2015 Alp Eren Can. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "BlogDetailViewController.h"
 
-@interface DetailViewController ()
+@interface BlogDetailViewController ()
 
 @end
 
-@implementation DetailViewController
+@implementation BlogDetailViewController
 
 #pragma mark - Managing the detail item
 

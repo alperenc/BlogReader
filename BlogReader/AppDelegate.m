@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "DetailViewController.h"
+#import "BlogDetailViewController.h"
 
 @interface AppDelegate ()
 

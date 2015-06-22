@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		C7FC165D1B382ABD00388C17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FC165C1B382ABD00388C17 /* main.m */; };
 		C7FC16601B382ABD00388C17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FC165F1B382ABD00388C17 /* AppDelegate.m */; };
-		C7FC16631B382ABD00388C17 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FC16621B382ABD00388C17 /* MasterViewController.m */; };
-		C7FC16661B382ABD00388C17 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FC16651B382ABD00388C17 /* DetailViewController.m */; };
+		C7FC16631B382ABD00388C17 /* BlogMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FC16621B382ABD00388C17 /* BlogMasterViewController.m */; };
+		C7FC16661B382ABD00388C17 /* BlogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FC16651B382ABD00388C17 /* BlogDetailViewController.m */; };
 		C7FC16691B382ABD00388C17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7FC16671B382ABD00388C17 /* Main.storyboard */; };
 		C7FC166B1B382ABD00388C17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7FC166A1B382ABD00388C17 /* Images.xcassets */; };
 		C7FC166E1B382ABD00388C17 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7FC166C1B382ABD00388C17 /* LaunchScreen.xib */; };
@@ -33,10 +33,10 @@
 		C7FC165C1B382ABD00388C17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7FC165E1B382ABD00388C17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7FC165F1B382ABD00388C17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C7FC16611B382ABD00388C17 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		C7FC16621B382ABD00388C17 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		C7FC16641B382ABD00388C17 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		C7FC16651B382ABD00388C17 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C7FC16611B382ABD00388C17 /* BlogMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlogMasterViewController.h; sourceTree = "<group>"; };
+		C7FC16621B382ABD00388C17 /* BlogMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlogMasterViewController.m; sourceTree = "<group>"; };
+		C7FC16641B382ABD00388C17 /* BlogDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlogDetailViewController.h; sourceTree = "<group>"; };
+		C7FC16651B382ABD00388C17 /* BlogDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlogDetailViewController.m; sourceTree = "<group>"; };
 		C7FC16681B382ABD00388C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7FC166A1B382ABD00388C17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C7FC166D1B382ABD00388C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -86,10 +86,10 @@
 			children = (
 				C7FC165E1B382ABD00388C17 /* AppDelegate.h */,
 				C7FC165F1B382ABD00388C17 /* AppDelegate.m */,
-				C7FC16611B382ABD00388C17 /* MasterViewController.h */,
-				C7FC16621B382ABD00388C17 /* MasterViewController.m */,
-				C7FC16641B382ABD00388C17 /* DetailViewController.h */,
-				C7FC16651B382ABD00388C17 /* DetailViewController.m */,
+				C7FC16611B382ABD00388C17 /* BlogMasterViewController.h */,
+				C7FC16621B382ABD00388C17 /* BlogMasterViewController.m */,
+				C7FC16641B382ABD00388C17 /* BlogDetailViewController.h */,
+				C7FC16651B382ABD00388C17 /* BlogDetailViewController.m */,
 				C7FC16671B382ABD00388C17 /* Main.storyboard */,
 				C7FC166A1B382ABD00388C17 /* Images.xcassets */,
 				C7FC166C1B382ABD00388C17 /* LaunchScreen.xib */,
@@ -225,9 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7FC16601B382ABD00388C17 /* AppDelegate.m in Sources */,
-				C7FC16631B382ABD00388C17 /* MasterViewController.m in Sources */,
+				C7FC16631B382ABD00388C17 /* BlogMasterViewController.m in Sources */,
 				C7FC165D1B382ABD00388C17 /* main.m in Sources */,
-				C7FC16661B382ABD00388C17 /* DetailViewController.m in Sources */,
+				C7FC16661B382ABD00388C17 /* BlogDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

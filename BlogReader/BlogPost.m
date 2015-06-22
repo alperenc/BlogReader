@@ -36,4 +36,13 @@
     
 }
 
+- (NSString *)formattedDate {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *blogPostDate = [dateFormatter dateFromString:self.date];
+    
+    [dateFormatter setDateFormat:@"EE MMM, dd"];
+    return [dateFormatter stringFromDate:blogPostDate];
+}
+
 @end

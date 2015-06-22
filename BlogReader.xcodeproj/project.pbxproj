@@ -87,14 +87,14 @@
 		C7FC16591B382ABD00388C17 /* BlogReader */ = {
 			isa = PBXGroup;
 			children = (
-				C7FC16831B3854CC00388C17 /* BlogPost.h */,
-				C7FC16841B3854CC00388C17 /* BlogPost.m */,
 				C7FC165E1B382ABD00388C17 /* AppDelegate.h */,
 				C7FC165F1B382ABD00388C17 /* AppDelegate.m */,
 				C7FC16611B382ABD00388C17 /* BlogMasterViewController.h */,
 				C7FC16621B382ABD00388C17 /* BlogMasterViewController.m */,
 				C7FC16641B382ABD00388C17 /* BlogDetailViewController.h */,
 				C7FC16651B382ABD00388C17 /* BlogDetailViewController.m */,
+				C7FC16831B3854CC00388C17 /* BlogPost.h */,
+				C7FC16841B3854CC00388C17 /* BlogPost.m */,
 				C7FC16671B382ABD00388C17 /* Main.storyboard */,
 				C7FC166A1B382ABD00388C17 /* Images.xcassets */,
 				C7FC166C1B382ABD00388C17 /* LaunchScreen.xib */,
@@ -428,6 +428,7 @@
 				C7FC167F1B382ABD00388C17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7FC16801B382ABD00388C17 /* Build configuration list for PBXNativeTarget "BlogReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +437,7 @@
 				C7FC16821B382ABD00388C17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
